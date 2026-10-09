@@ -1,13 +1,23 @@
 import { Component } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/angular';
-import { ExploreContainerComponent } from '../explore-container/explore-container.component';
+import {
+  IonContent,
+  IonCard,
+  IonCardHeader,
+  IonCardTitle,
+  IonCardContent
+} from '@ionic/angular';
 
 @Component({
   selector: 'app-tab1',
-  templateUrl: 'tab1.page.html',
-  styleUrls: ['tab1.page.scss'],
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent, ExploreContainerComponent],
+  templateUrl: './tab1.page.html',
+  styleUrls: ['./tab1.page.scss'],
+  standalone: true,
+  imports: [
+    IonContent,
+    IonCard,
+    IonCardHeader,
+    IonCardTitle,
+    IonCardContent
+  ]
 })
-export class Tab1Page {
-  constructor() {}
-}
+export class Tab1Page {}
